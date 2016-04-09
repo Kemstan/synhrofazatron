@@ -1,0 +1,106 @@
+﻿</body>
+</html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="button.css">
+
+		<script>
+			var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
+				buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
+				totalButtons7Click = buttons7Click.length,
+				totalButtons9Click = buttons9Click.length;
+
+			buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+			buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+			function activate() {
+				var self = this, activatedClass = 'btn-activated';
+
+				if( classie.has( this, 'btn-7h' ) ) {
+					// if it is the first of the two btn-7h then activatedClass = 'btn-error';
+					// if it is the second then activatedClass = 'btn-success'
+					activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
+				}
+				else if( classie.has( this, 'btn-8g' ) ) {
+					// if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
+					// if it is the second then activatedClass = 'btn-error3d'
+					activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
+				}
+
+				if( !classie.has( this, activatedClass ) ) {
+					classie.add( this, activatedClass );
+					setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+				}
+			}
+
+			document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
+				classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+			}, false );
+		</script>
+<title>Pelicano 2.0</title>
+<script> 
+var start1 = 0; 
+var cnt1 = 0; 
+var many1 = 0; 
+var mony1 = 0; 
+var PreviousDownTimeX1 = 0;
+
+function down1()
+{
+if (!PreviousDownTimeX1) PreviousDownTimeX1 = new Date ().getTime (); else
+   {
+   var CurrentDownTimeX = new Date ().getTime ();
+   var delta = CurrentDownTimeX - PreviousDownTimeX1;
+
+   if (many1<13) { document.getElementById("delta_key").value += delta +","; } 
+   many1++;
+   PreviousDownTimeX1 = CurrentDownTimeX;
+   }
+}
+function processKeyDown1(e) {
+    down1();
+    if (!start1) {
+        start1 = (new Date()).getTime();
+    }
+    ++cnt1;
+    
+}
+
+function processKeyUp1(e) {
+    var delta = (new Date()).getTime() - start1;
+    
+	start1 = 0;
+    cnt1 = 0;
+
+    if (mony1<14) { document.getElementById("push_key").value += delta +","; } 
+	mony1++;
+	}
+</script>
+</head>
+<body>
+<div class="logo">
+
+</div> 
+<div class="wrapper_body">
+     <div class="cbm_wrap ">
+     <h1>Вітаємо в системі<br/>"Pelicano 2.0"</h1>
+     <img src="cat.jpg">
+     <p class="intro">Щоб увійти, ведіть слово </p>
+	 <p class="word"><b>синхрофазатрон</b></p>
+<form name="test" method="post" action="login.php">
+<input type="text" class="enter" autocomplete="off" id="clickme1" onkeydown="processKeyDown1(event)" onkeyup="processKeyUp1(event)" value="" size="18" maxlength="14"></input><br>
+<input name="push_key" type="hidden" id="push_key"  size="100"></input><br>
+<input name="delta_key" type="hidden" id="delta_key"  size="100"/></input><br/>
+<input type="submit" class="button4" value="Увійти">
+<input type="button" class="button6" onclick="location.href='register.php'" value="Зареєструватись"/>
+   </form>
+	 <br />
+     </div>
+</div>
+
+   </body>
+</html>
+
+
+

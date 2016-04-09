@@ -1,0 +1,125 @@
+.wrapper_body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:url('http://cssdeck.com/uploads/media/items/0/0Rs78ic.gif');
+    z-index: 0;
+    padding: 20px 0; 
+     font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4A4A ;
+    text-align: center;
+}
+.cbm_wrap {
+    width:300px;
+    min-height:310px;
+    background:#FFF;
+    margin:20px auto;
+    padding: 10px;
+	position:relative; 
+          -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.cbm_wrap:before, .cbm_wrap:after{
+    content:'';
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.cbm_wrap:after{
+    right:10px; 
+    /*left:auto;*/
+    -webkit-transform:skew(8deg) rotate(3deg);
+        -moz-transform:skew(8deg) rotate(3deg); 
+           -ms-transform:skew(8deg) rotate(3deg); 
+            -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+  .cbm_wrap img {
+    width: 100%;
+    margin-top: 15px;
+}
+.cbm_wrap p{ 
+    margin-top: 5px !important;
+    /*text-align: justify !important;*/
+	font-family: century gothic;
+	margin: 0;
+}
+.cbm_wrap h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px; 
+	font-family: century gothic;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.cbm_wrap a{
+    text-decoration: none;
+	font-family: century gothic;
+    color: #4A4A4A !important;
+}
+.cbm_wrap a:hover{
+    text-decoration: underline;
+	font-family: century gothic;
+    color: #6B6B6B !important ;
+}
+body{
+height:100%;
+margin:0;
+}
+html{
+height:100%;
+margin:0;
+}
+.enter{
+font-size: 23pt;
+font-family: century gothic;
+}
+.word{
+font-size: 20pt;
+color: #0454A7;
+}
+.intro{
+font-size: 14pt;
+color: #000;
+margin: 8px;
+font-family: century gothic;
+}
+.logo{
+position: absolute;
+top:0;
+left:55;
+z-index:10;
+background: url("logo.png") no-repeat;
+width:300px;
+height:250px;
+}
+.tutorial{
+position:absolute;
+width: 300px;
+height: 500px;
+display: block;
+z-index: 40;
+right:20;
+top:5;
+padding: 35px;
+background: url("paper.png") no-repeat;
+background-size: 100%;
+}
+.game{
+z-index: 10;
+display: block;
+width: 400px;
+height: 300px;
+position: absolute;
+top: 50px;
+right: 90;
+}
